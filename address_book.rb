@@ -37,7 +37,6 @@ end
 
 def add_address
   puts "Please enter the address for '#{@current_person}"
-  puts "First, let's start with the address number."
   address_entry = gets.chomp
   new_address = Address.new(address_entry)
   new_address.save
